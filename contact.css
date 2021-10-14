@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: white; 
+    background-image: url(dorji.jpeg);
+}
+
+#box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid red;
+}
+
+#box h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#box input[type="text"], #box input[type="email"], textarea {
+    border: 2px solid red;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 10px;
+    width: 200px;
+    color: #fff;
+    border-radius:  24px;
+    outline: none;
+    text-align: center;
+}
+
+#box input[type="text"]:focus, .box input[type="email"]:focus, textarea:focus {
+    transition: 0.65s;
+    width: 280px;
+    border-color: #fff;
+}
+
+#box input[type="submit"] {
+    border: 2px solid red;
+    background: none;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#box input[type="submit"]:hover {
+    background: red;
+}
